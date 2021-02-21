@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <title>Как получить все заголовки запроса в ранних версиях PHP</title>
+  <link href="/css/app.css" rel="preload" as="style"><link href="/js/app.js" rel="preload" as="script"><link href="/js/chunk-vendors.js" rel="preload" as="script"><link href="/css/app.css" rel="stylesheet"><meta data-vue-meta="ssr" data-vmid="description" name="description" content="Когда готовые функции языка не работают"></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but blog.server doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"><header class="header"><div class="wrap_head"><div class="head"><a href="/home" class="logo"> BlogOnVue! </a><p><svg viewBox="0 0 24 24" fill="black" width="28px" height="28px" class="gamburger"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></p></div></div><nav class="overlay"><div class="wrap_close"><svg viewBox="0 0 24 24" fill="black" width="38px" height="38px" class="close"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></div><ul class="menu"><li class=""><span>О сайте</span></li><li class=""><span>Контакты</span></li><li class=""><span>Вход</span></li></ul></nav></header><main class="main"><div class="content"><div class="article_wrap"><div class="article_meta"><div><a href="/rubric/php/2" class="article_meta_topic"> PHP </a></div><div><a href="/author/david_markov/25" class="article_meta_author"> david_markov </a></div></div><h1 class="article_title">Как получить все заголовки запроса в ранних версиях PHP</h1><h2 class="article_subtitle">Когда готовые функции языка не работают</h2><div class="article_text"><div><div>apache_request_headers ();<br>
+<br>
+getallheaders ();<br>
+<br>
+function getallheaders()<br>
+    {<br>
+           $headers = [];<br>
+       foreach ($_SERVER as $name =&gt; $value)<br>
+       {<br>
+           if (substr($name, 0, 5) == 'HTTP_')<br>
+           {<br>
+               $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;<br>
+           }<br>
+       }<br>
+       return $headers;<br>
+    }</div></div></div></div></div></main><footer class="footer"><a href="/home" class="footer_logo"> BlogOnVue! 2021 </a></footer></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="/js/chunk-vendors.js"></script><script type="text/javascript" src="/js/app.js"></script>
+
+</body></html>
