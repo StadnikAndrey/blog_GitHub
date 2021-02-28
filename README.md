@@ -20,35 +20,7 @@
 - Vue Router
 - Vue-resource
 - PHP, MySQL
-- JWT
-
-## Запуск в режиме разработки
-Все папки кроме dist, prerendered, server размещаем в папке вашего проекта на ПК.  
-Содержимое папки server размещаем в корне папки на сервере.  
-
-Во vue.config.js и build.prerender.js указываем настройки для proxy: target: "ваш домен (там где находится содержимое папки server".  
-В components/page/Article.vue и components/page/cabinet/UpdateAticle.vue пути к img - "для разработки".
-```  
-Устанавливаем все зависимости: npm install.
-```  
-
-На сервере:
-- создаем базу данных, импортируем blog.sql.
-- в api/config/settings.php указываем данные для подключения к базе данных.
-
-````
-npm run serve - запускаем в режиме разработки.
-````
-
-## Запуск на сервере 
-Содержимое папки server размещаем в корне папки на сервере.  
-Во vue.config.js и build.prerender.js указываем настройки для proxy: target: "ваш домен (там где находится содержимое папки server".  
-В components/page/Article.vue и components/page/cabinet/UpdateAticle.vue пути к img - "для prodaction".  
-Содержимое dist и папку prerendered размещаем в корне папки на сервере.  
-dist и prerendered берем из репозитория или запускаем npm run render, предварительно удалив prerendered.
-
-## Обновление контента и пререндеринг
-После обновления контента необходимо выполнить npm run render, предварительно удалив prerendered и обновить папку prerendered на сервере.
+- JWT 
 
 ## Project setup
 ```
