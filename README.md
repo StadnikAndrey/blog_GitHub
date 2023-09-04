@@ -1,19 +1,18 @@
-# Блог на Vue.js
+# Blog on Vue.js, PHP
 
-## Функциональность
-Просмотр всех статей с постраничной навигацией при прокрутке.  
-Просмотр выбранной статьи.  
-Фильтр по рубрике или автору.  
-Публикация статей доступна после регистрации.  
-Личный кабинет пользователя с возможностью добавлять, редактировать, удалять статьи.  
-Админпанель для управления содержимым блога.
+## Functionality
+View all articles with pagination while scrolling.
+View the selected article.
+Filter by category or author.     
+User's personal account with the ability to add, edit, delete articles.
+Admin panel for blog content management.
 
-## Особенности
-Авторизация с использованием JWT-токенов.  
-Пререндеринг.  
-Серверное API выполнено на PHP.
+## Peculiarities
+Authorization using JWT tokens.
+Prerendering.
+The server API is implemented in PHP.
 
-## Технологии используемые при разработке:
+## Technologies used in development:
 - Vue.js
 - Vue CLI
 - Vuex
