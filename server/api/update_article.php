@@ -65,7 +65,7 @@ if ($token) {
 				if(!$error_img && $_FILES[$i]["size"][$key] <= 3000000) { 
 					//Адрес папки для сохранения
 					// разработка
-					// $dirPath =  "d:\blog.server\src\assets\img_articles\/" . $unic_id . "_". $_FILES[$i]['name'][$key]; 
+					// $dirPath =  "d:\blog\src\assets\img_articles\/" . $unic_id . "_". $_FILES[$i]['name'][$key]; 
 					// prodaction
 					$dirPath =  "./../img/" . $unic_id . "_". $_FILES[$i]['name'][$key]; 			 
 					if(move_uploaded_file($_FILES[$i]["tmp_name"][$key], $dirPath)){

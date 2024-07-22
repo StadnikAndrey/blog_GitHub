@@ -12,9 +12,6 @@ module.exports = (api, options) => {
             .then(response => response.json())
             .then(data => {
                 return data.map(article => `/article/${article.id}`);                 
-            })
-            .catch((e) => {
-                console.log(e);
             });             
         routes.unshift('/', '/about', '/contacts');
          

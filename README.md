@@ -8,12 +8,12 @@
 Личный кабинет пользователя с возможностью добавлять, редактировать, удалять статьи.  
 Админпанель для управления содержимым блога.
 
-## Особенности
-Авторизация с использованием JWT-токенов.  
-Пререндеринг.  
-Серверное API выполнено на PHP.
+## Peculiarities
+Authorization using JWT tokens.
+Prerendering.
+The server API is implemented in PHP.
 
-## Технологии используемые при разработке:
+## Technologies used in development:
 - Vue.js
 - Vue CLI
 - Vuex
@@ -73,3 +73,4 @@ npm run render
 ```
 npm run lint
 ``` 
+
