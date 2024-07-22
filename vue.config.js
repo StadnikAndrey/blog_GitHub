@@ -4,7 +4,7 @@ module.exports = {
     devServer: {
         proxy: {
             "/api/": {
-                target: "http://blogonvue.zzz.com.ua",
+                target: "http://blog",
                 secure: false,
                 changeOrigin: true
             }
